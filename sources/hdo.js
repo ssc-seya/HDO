@@ -41,6 +41,16 @@ HDO.NodeArray = function(data) {
 };
 
 /** */
+HDO.NodeEncode = function(node) {
+
+    /* Expected input to be HTMLElement (object) */
+    if(!node instanceof HTMLElement) {
+        return false;
+    }
+
+};
+
+/** */
 HDO.HTML = function(tag, attributes = {}, children = []) {
 
     /* */
