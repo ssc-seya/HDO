@@ -18,7 +18,7 @@ window.HDO = {
     }
 };
 
-/** */
+/** Convert Object to HTMLElement */
 HDO.NodeObject = function(data) {
     
     /* Create HTMLElement */
@@ -29,7 +29,7 @@ HDO.NodeObject = function(data) {
 
 };
 
-/** */
+/** Convert Array of Objects to Array of Node's */
 HDO.NodeArray = function(data) {
     
     /* */
@@ -40,7 +40,7 @@ HDO.NodeArray = function(data) {
 
 };
 
-/** */
+/** Convert HTMLElement to Object */
 HDO.NodeEncode = function(node) {
 
     /* Expected input to be HTMLElement (object) */
@@ -50,7 +50,7 @@ HDO.NodeEncode = function(node) {
 
 };
 
-/** */
+/** Create HTMLElement */
 HDO.HTML = function(tag, attributes = {}, children = []) {
 
     /* */
@@ -61,7 +61,7 @@ HDO.HTML = function(tag, attributes = {}, children = []) {
 
 };
 
-/** */
+/** Create TextNode */
 HDO.Text = function(text) {
     return document.createTextNode(text);
 };
